@@ -1,0 +1,11 @@
+{% block content %}
+    <h1>Личность</h1>
+    <p class="personality-name">
+        {{ personality.name }}
+    </p>
+    <p> <img class="card-img-top" src="../../../{{ personality.photo }}" alt="Card image">
+    </p>
+    <p class="personality-desc">
+        Описание: {{ personality.desc }}
+    </p>
+{% endblock %}

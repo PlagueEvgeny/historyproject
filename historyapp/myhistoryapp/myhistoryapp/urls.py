@@ -21,6 +21,8 @@ from django.urls import path
 urlpatterns = [
     path('', history.index),
     path('category/', history.category),
+    path('personality/', history.personality),
+    path('personality/personality_page/<int:pk>/', history.personality_page, name='personality_page'),
     path('admin/', admin.site.urls),
 
 ]

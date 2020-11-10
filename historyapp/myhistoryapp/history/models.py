@@ -1,4 +1,5 @@
 from django.db import models
+from django.apps import apps
 
 class Category(models.Model):
     name = models.CharField(max_length=128)
@@ -23,3 +24,4 @@ null=True)
     class Meta:
         verbose_name = 'Личность'
         verbose_name_plural = 'Личности'
+
