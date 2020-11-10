@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('', history.index),
+    path('category/', history.category),
     path('admin/', admin.site.urls),
 
 ]
